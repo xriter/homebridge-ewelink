@@ -1,74 +1,74 @@
 {
-  "name": "@homebridge-plugins/homebridge-ewelink",
-  "displayName": "Homebridge eWeLink",
-  "alias": "eWeLink",
-  "type": "module",
-  "version": "12.14.2-fork.5",
-  "description": "Homebridge plugin to integrate eWeLink devices into HomeKit.",
-  "author": {
-    "name": "bwp91",
-    "email": "bwp91@icloud.com"
-  },
-  "license": "MIT",
-  "funding": [
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/bwp91"
+    "name": "@homebridge-plugins/homebridge-ewelink",
+    "displayName": "Homebridge eWeLink",
+    "alias": "eWeLink",
+    "type": "module",
+    "version": "12.14.2-fork.6",
+    "description": "Homebridge plugin to integrate eWeLink devices into HomeKit.",
+    "author": {
+        "name": "bwp91",
+        "email": "bwp91@icloud.com"
     },
-    {
-      "type": "kofi",
-      "url": "https://ko-fi.com/bwp91"
+    "license": "MIT",
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/bwp91"
+        },
+        {
+            "type": "kofi",
+            "url": "https://ko-fi.com/bwp91"
+        },
+        {
+            "type": "patreon",
+            "url": "https://www.patreon.com/bwp91"
+        },
+        {
+            "type": "paypal",
+            "url": "https://www.paypal.me/BenPotter"
+        }
+    ],
+    "homepage": "https://github.com/homebridge-plugins/homebridge-ewelink",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/homebridge-plugins/homebridge-ewelink.git"
     },
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/bwp91"
+    "bugs": {
+        "url": "https://github.com/homebridge-plugins/homebridge-ewelink/issues"
     },
-    {
-      "type": "paypal",
-      "url": "https://www.paypal.me/BenPotter"
+    "keywords": [
+        "homebridge",
+        "homebridge-plugin",
+        "homebridge-ewelink",
+        "hoobs",
+        "hoobs-plugin",
+        "homekit",
+        "siri",
+        "zigbee",
+        "rf",
+        "ewelink",
+        "sonoff",
+        "eachen",
+        "smartwise"
+    ],
+    "main": "lib/index.js",
+    "engines": {
+        "homebridge": "^1.6.0 || ^2.0.0",
+        "node": "^22.12.0 || ^24.0.0"
+    },
+    "scripts": {
+        "lint": "eslint . --max-warnings=0",
+        "lint:fix": "npm run lint -- --fix"
+    },
+    "dependencies": {
+        "@homebridge/plugin-ui-utils": "^2.2.4",
+        "axios": "^1.17.0",
+        "node-persist": "^4.0.4",
+        "p-queue": "^9.3.0",
+        "websocket-as-promised": "^3.0.1",
+        "ws": "^8.21.0"
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "^9.0.0"
     }
-  ],
-  "homepage": "https://github.com/homebridge-plugins/homebridge-ewelink",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/homebridge-plugins/homebridge-ewelink.git"
-  },
-  "bugs": {
-    "url": "https://github.com/homebridge-plugins/homebridge-ewelink/issues"
-  },
-  "keywords": [
-    "homebridge",
-    "homebridge-plugin",
-    "homebridge-ewelink",
-    "hoobs",
-    "hoobs-plugin",
-    "homekit",
-    "siri",
-    "zigbee",
-    "rf",
-    "ewelink",
-    "sonoff",
-    "eachen",
-    "smartwise"
-  ],
-  "main": "lib/index.js",
-  "engines": {
-    "homebridge": "^1.6.0 || ^2.0.0",
-    "node": "^22.12.0 || ^24.0.0"
-  },
-  "scripts": {
-    "lint": "eslint . --max-warnings=0",
-    "lint:fix": "npm run lint -- --fix"
-  },
-  "dependencies": {
-    "@homebridge/plugin-ui-utils": "^2.2.4",
-    "axios": "^1.17.0",
-    "node-persist": "^4.0.4",
-    "p-queue": "^9.3.0",
-    "websocket-as-promised": "^3.0.1",
-    "ws": "^8.21.0"
-  },
-  "devDependencies": {
-    "@antfu/eslint-config": "^9.0.0"
-  }
 }
